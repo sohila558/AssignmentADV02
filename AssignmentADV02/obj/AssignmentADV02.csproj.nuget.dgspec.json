@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV02\\AssignmentADV02\\AssignmentADV02.csproj": {}
+    "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\AssignmentADV02\\AssignmentADV02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV02\\AssignmentADV02\\AssignmentADV02.csproj": {
+    "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\AssignmentADV02\\AssignmentADV02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV02\\AssignmentADV02\\AssignmentADV02.csproj",
+        "projectUniqueName": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\AssignmentADV02\\AssignmentADV02.csproj",
         "projectName": "AssignmentADV02",
-        "projectPath": "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV02\\AssignmentADV02\\AssignmentADV02.csproj",
+        "projectPath": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\AssignmentADV02\\AssignmentADV02.csproj",
         "packagesPath": "C:\\Users\\Mahmoud Rayan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV02\\AssignmentADV02\\obj\\",
+        "outputPath": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\AssignmentADV02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
