@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{586BAAD4-E732-48FF-BFF7-3B6815F55362}|DemoADV02\\DemoADV02.csproj|solutionrelative:demoadv02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF7A943-03FE-4C2B-85B4-A0BCFD34DA00}|AssignmentADV02\\AssignmentADV02.csproj|c:\\users\\mahmoud rayan\\desktop\\assignments\\oop\\advanced\\adv02\\assignmentadv02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF7A943-03FE-4C2B-85B4-A0BCFD34DA00}|AssignmentADV02\\AssignmentADV02.csproj|solutionrelative:assignmentadv02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{586BAAD4-E732-48FF-BFF7-3B6815F55362}|DemoADV02\\DemoADV02.csproj|c:\\users\\mahmoud rayan\\desktop\\assignments\\oop\\advanced\\adv02\\demoadv02\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586BAAD4-E732-48FF-BFF7-3B6815F55362}|DemoADV02\\DemoADV02.csproj|solutionrelative:demoadv02\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\DemoADV02\\Employee.cs",
+              "RelativeDocumentMoniker": "DemoADV02\\Employee.cs",
+              "ToolTip": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\DemoADV02\\Employee.cs",
+              "RelativeToolTip": "DemoADV02\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T18:50:20.673Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,22 +45,9 @@
               "RelativeDocumentMoniker": "DemoADV02\\Program.cs",
               "ToolTip": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\DemoADV02\\Program.cs",
               "RelativeToolTip": "DemoADV02\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAKYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-09T13:43:57.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\AssignmentADV02\\Program.cs",
-              "RelativeDocumentMoniker": "AssignmentADV02\\Program.cs",
-              "ToolTip": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV02\\AssignmentADV02\\Program.cs",
-              "RelativeToolTip": "AssignmentADV02\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T13:37:19.495Z",
               "EditorCaption": ""
             }
           ]

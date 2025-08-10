@@ -26,6 +26,29 @@ namespace DemoADV02
             }
             return sum;
         }
+
+        public static void PrintList<T>(List<T> list)
+        {
+            Console.WriteLine();
+            foreach (T item in list)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+        }
+        public static int SumList(List<int> list)
+        {
+            int sum = 0;
+            if (list is not null)
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    sum += list[i];
+                }
+            }
+            return sum;
+        }
+
         static void Main(string[] args)
         {
             #region What is Collections ?
@@ -162,6 +185,30 @@ namespace DemoADV02
             //Console.WriteLine(sum); 
             #endregion
 
+            #region Generic Lists : List
+            // Generic Lists : List
+            // List : Version Generic of ArrayList
+            // List Like ArrayList Like Array : Generic - Dynamic Size
+
+            //List<int> list = new List<int>();
+
+            //list.Add(1);
+            //list.Add(2);
+            //list.Add(3);
+            //list.Add(4);
+            //list.Add(5);
+
+            //PrintList(list);
+
+            //int Sum = SumList(list);
+            //Console.WriteLine(Sum);
+
+            //list.AddRange(new List<int>() { 10, 20, 30, 40, 50 });
+            //PrintList(list);
+
+            //int i = list.BinarySearch(5);
+            //Console.WriteLine(i); 
+            #endregion
 
 
 
