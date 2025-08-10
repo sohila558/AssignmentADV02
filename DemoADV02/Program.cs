@@ -13,6 +13,19 @@ namespace DemoADV02
             }
             Console.WriteLine();
         }
+
+        public static int SumArrayList(ArrayList list)
+        {
+            int sum = 0;
+            if(list is not null)
+            {
+                for(int i = 0; i < list.Count; i++)
+                {
+                    sum += (int)list[i]; 
+                }
+            }
+            return sum;
+        }
         static void Main(string[] args)
         {
             #region What is Collections ?
@@ -33,6 +46,7 @@ namespace DemoADV02
             // Generic : Dictionary - SortedDictionary 
             #endregion
 
+            #region Non-Generic Lists : ArrayList
             // Lists 
             // Non-Generic Lists : ArrayList
 
@@ -130,8 +144,23 @@ namespace DemoADV02
             //list.RemoveAt(0);
             //list.RemoveRange(0, 3);
             //list.SetRange(0, new int[] { 10, 20, 30 });
-            //PrintArraylist(list);
+            //PrintArraylist(list); 
+            #endregion
 
+            #region Problem with Non-Generic Lists [ArrayList]
+            //ArrayList list = new ArrayList();
+
+            //list.Add(1);
+            //list.Add(2);
+            //list.Add(3);
+            //list.Add(4);
+            //list.Add(5);
+
+            ////list.Add("Hello World");
+
+            //int sum = SumArrayList(list);
+            //Console.WriteLine(sum); 
+            #endregion
 
 
 
