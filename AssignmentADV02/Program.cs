@@ -270,9 +270,9 @@ namespace AssignmentADV02
                      queue.Enqueue(1)
                      queue.Enqueue(“Apple”)
                      queue.Enqueue(5.28)     */
-            
+
             //Queue myQueue = new Queue();
-            
+
             //myQueue.Enqueue(1);         
             //myQueue.Enqueue("Apple");   
             //myQueue.Enqueue(5.28);      
@@ -292,7 +292,32 @@ namespace AssignmentADV02
                * print a message indicating that the target was not found(“Target was not found”).
                  Note : take the target as input from the user */
 
+            //Stack<int> stack = new Stack<int>();
 
+            
+            //stack.Push(10);
+            //stack.Push(20);
+            //stack.Push(30);
+            //stack.Push(40);
+            //stack.Push(50);
+
+            //Console.Write("Enter target number: ");
+            //int target = int.Parse(Console.ReadLine());
+
+            //int count = 0;
+            //bool found = false;
+
+            //foreach (var item in stack)
+            //{
+            //    count++;
+            //    if (item == target)
+            //    {
+            //        found = true;
+            //        break;
+            //    }
+            //}
+
+            //Console.WriteLine(found? $"Target was found successfully and the count = {count}": "Target was not found");
 
             #endregion
 
