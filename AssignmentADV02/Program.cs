@@ -60,6 +60,39 @@
             {
                 queue.Enqueue(stack.Pop());
             }
+        }
+        #endregion
+
+        #region Q04
+        static bool IsBalanced(string str)
+        {
+            Stack<char> stack = new Stack<char>();
+
+            foreach (char ch in str)
+            {
+                if (ch == '(' || ch == '[' || ch == '{')
+                {
+                    stack.Push(ch);
+                }
+                else if (ch == ')' || ch == ']' || ch == '}')
+                {
+                    if (stack.Count == 0) return false;
+
+                    char top = stack.Pop();
+
+                    if (!IsMatching(top, ch))
+                        return false;
+                }
+            }
+
+            return stack.Count == 0;
+        }
+
+        static bool IsMatching(char open, char close)
+        {
+            return (open == '(' && close == ')') ||
+                   (open == '[' && close == ']') ||
+                   (open == '{' && close == '}');
         } 
         #endregion
 
@@ -128,8 +161,35 @@
             {
                 Console.Write(item + " ");
             }
-            Console.WriteLine(); 
+            Console.WriteLine();
             #endregion
+
+            #region Q04
+
+            // 4. Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
+
+            string input;
+            while (true)
+            {
+                Console.Write("Enter a string of parentheses: ");
+                input = Console.ReadLine();
+
+                if (!string.IsNullOrWhiteSpace(input))
+                    break;
+
+                Console.WriteLine("Input cannot be empty. Please try again.");
+            }
+
+            bool isBalanced = IsBalanced(input);
+
+            if (isBalanced)
+                Console.WriteLine("The parentheses are balanced.");
+            else
+                Console.WriteLine("The parentheses are not balanced."); 
+            #endregion
+
+
+
 
 
 
