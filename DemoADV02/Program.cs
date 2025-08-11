@@ -49,6 +49,17 @@ namespace DemoADV02
             return sum;
         }
 
+        public static void printLinkedList(LinkedList<int> list)
+        {
+            Console.Write("null");
+            Console.WriteLine();
+            foreach (int item in list)
+            {
+                Console.WriteLine($"<-- {item} -->");
+            }
+            Console.WriteLine("null");
+        }
+
         static void Main(string[] args)
         {
             #region What is Collections ?
@@ -208,6 +219,15 @@ namespace DemoADV02
 
             //int i = list.BinarySearch(5);
             //Console.WriteLine(i); 
+            #endregion
+
+            #region Generic List : LinkedList
+            // Generic List : Linked List
+
+            //LinkedList<int> linkedList = new LinkedList<int>();
+
+            //linkedList.AddFirst(1);
+            //linkedList.AddFirst(2); 
             #endregion
 
 
