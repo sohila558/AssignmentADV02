@@ -26,6 +26,21 @@
         //} 
         #endregion
 
+        #region Q02
+        static bool IsPalindrome<T>(T[] array)
+        {
+            EqualityComparer<T> comparer = EqualityComparer<T>.Default;
+            int n = array.Length;
+
+            for (int i = 0; i < n / 2; i++)
+            {
+                if (!comparer.Equals(array[i], array[n - 1 - i]))
+                    return false;
+            }
+            return true;
+        } 
+        #endregion
+
         static void Main(string[] args)
         {
             #region Q01
@@ -47,8 +62,25 @@
 
             #endregion
 
+            #region Q02
 
+            // 2. Given a number N and an array of N numbers. Determine if it's palindrome or not.
 
+            //Console.Write("Enter N: ");
+            //int N = int.Parse(Console.ReadLine());
+
+            //string[] arr = new string[N];
+            //Console.WriteLine("Enter the elements:");
+            //for (int i = 0; i < N; i++)
+            //{
+            //    arr[i] = Console.ReadLine();
+            //}
+
+            //if (IsPalindrome(arr))
+            //    Console.WriteLine("Yes");
+            //else
+            //    Console.WriteLine("No");
+            #endregion
 
         }
     }
