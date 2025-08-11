@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace AssignmentADV02
 {
@@ -269,8 +270,17 @@ namespace AssignmentADV02
                      queue.Enqueue(1)
                      queue.Enqueue(“Apple”)
                      queue.Enqueue(5.28)     */
+            
+            //Queue myQueue = new Queue();
+            
+            //myQueue.Enqueue(1);         
+            //myQueue.Enqueue("Apple");   
+            //myQueue.Enqueue(5.28);      
 
+            //Console.WriteLine("Queue elements:");
 
+            //foreach (var item in myQueue)
+            //    Console.WriteLine(item);
 
             #endregion
 
