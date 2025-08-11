@@ -1,4 +1,6 @@
-﻿namespace AssignmentADV02
+﻿using System.Collections;
+
+namespace AssignmentADV02
 {
     internal class Program
     {
@@ -93,6 +95,17 @@
             return (open == '(' && close == ')') ||
                    (open == '[' && close == ']') ||
                    (open == '{' && close == '}');
+        }
+        #endregion
+
+        #region Q06
+        static void RemoveOddNumbers(ArrayList list)
+        {
+            for (int i = list.Count - 1; i >= 0; i--)
+            {
+                if ((int)list[i] % 2 != 0)
+                    list.RemoveAt(i);
+            }
         } 
         #endregion
 
@@ -141,54 +154,161 @@
 
             // 3. Given a Queue, implement a function to reverse the elements of a queue using a stack.
 
-            Queue<int> myQueue = new Queue<int>();
-            myQueue.Enqueue(10);
-            myQueue.Enqueue(20);
-            myQueue.Enqueue(30);
-            myQueue.Enqueue(40);
+            //Queue<int> myQueue = new Queue<int>();
+            //myQueue.Enqueue(10);
+            //myQueue.Enqueue(20);
+            //myQueue.Enqueue(30);
+            //myQueue.Enqueue(40);
 
-            Console.WriteLine("Original Queue:");
-            foreach (int item in myQueue)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
+            //Console.WriteLine("Original Queue:");
+            //foreach (int item in myQueue)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //Console.WriteLine();
 
-            ReverseQueue(myQueue);
+            //ReverseQueue(myQueue);
 
-            Console.WriteLine("Reversed Queue:");
-            foreach (int item in myQueue)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
+            //Console.WriteLine("Reversed Queue:");
+            //foreach (int item in myQueue)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //Console.WriteLine();
             #endregion
 
             #region Q04
 
             // 4. Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
 
-            string input;
-            while (true)
-            {
-                Console.Write("Enter a string of parentheses: ");
-                input = Console.ReadLine();
+            //string input;
+            //while (true)
+            //{
+            //    Console.Write("Enter a string of parentheses: ");
+            //    input = Console.ReadLine();
 
-                if (!string.IsNullOrWhiteSpace(input))
-                    break;
+            //    if (!string.IsNullOrWhiteSpace(input))
+            //        break;
 
-                Console.WriteLine("Input cannot be empty. Please try again.");
-            }
+            //    Console.WriteLine("Input cannot be empty. Please try again.");
+            //}
 
-            bool isBalanced = IsBalanced(input);
+            //bool isBalanced = IsBalanced(input);
 
-            if (isBalanced)
-                Console.WriteLine("The parentheses are balanced.");
-            else
-                Console.WriteLine("The parentheses are not balanced."); 
+            //if (isBalanced)
+            //    Console.WriteLine("The parentheses are balanced.");
+            //else
+            //    Console.WriteLine("The parentheses are not balanced.");
             #endregion
 
+            #region Q05
+            // 5. Given an array, implement a function to remove duplicate elements from an array.
 
+            //Console.Write("Enter array size: ");
+            //int size;
+            //while (!int.TryParse(Console.ReadLine(), out size) || size <= 0)
+            //    Console.Write("Invalid! Enter positive size: ");
+
+            //int[] arr = new int[size];
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.Write($"Enter element {i + 1}: ");
+            //    while (!int.TryParse(Console.ReadLine(), out arr[i]))
+            //        Console.Write("Invalid! Enter a number: ");
+            //}
+
+            //Console.WriteLine("\nArray after removing duplicates:");
+            //for (int i = 0; i < size; i++)
+            //{
+            //    bool isDuplicate = false;
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        if (arr[i] == arr[j])
+            //        {
+            //            isDuplicate = true;
+            //            break;
+            //        }
+            //    }
+            //    if (!isDuplicate)
+            //        Console.Write(arr[i] + " ");
+            //}
+
+            #endregion
+
+            #region Q06
+            // 6. Given an array list , implement a function to remove all odd numbers from it.
+
+            //ArrayList numbers = new ArrayList();
+
+            //Console.Write("Enter number of elements: ");
+            //int size;
+            //while (!int.TryParse(Console.ReadLine(), out size) || size <= 0)
+            //    Console.Write("Invalid! Enter a positive number: ");
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.Write($"Enter element {i + 1}: ");
+            //    int num;
+            //    while (!int.TryParse(Console.ReadLine(), out num))
+            //        Console.Write("Invalid! Enter a number: ");
+            //    numbers.Add(num);
+            //}
+
+            //RemoveOddNumbers(numbers);
+
+            //Console.WriteLine("\nArrayList after removing odd numbers:");
+            //foreach (var item in numbers)
+            //    Console.Write(item + " ");
+
+            #endregion
+
+            #region Q07
+            /*7. Implement a queue that can hold different data types. 
+                     And insert the following data:
+                     queue.Enqueue(1)
+                     queue.Enqueue(“Apple”)
+                     queue.Enqueue(5.28)     */
+
+
+
+            #endregion
+
+            #region Q08
+            /*8. Create a function that pushes a series of integers onto a stack.
+               * Then, search for a target integer in the stack. If the target is found,
+               * print a message indicating that the target was found how many elements were checked before finding the target
+               * (“Target was found successfully and the count = 5”). If the target is not found,
+               * print a message indicating that the target was not found(“Target was not found”).
+                 Note : take the target as input from the user */
+
+
+
+            #endregion
+
+            #region Q09
+
+            // 9. Given two arrays, find their intersection. Each element in the result should appear
+            // as many times as it shows in both arrays.
+
+
+            #endregion
+
+            #region Q10
+
+            // 10. Given an ArrayList of integers and a target sum, find if there is a contiguous
+            // sub list that sums up to the target.
+
+
+
+            #endregion
+
+            #region Q11
+
+            // 11. Given a queue reverse first K elements of a queue, keeping the remaining elements in the same order.
+
+
+            #endregion
 
 
 
