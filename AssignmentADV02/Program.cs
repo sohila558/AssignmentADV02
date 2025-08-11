@@ -330,7 +330,7 @@ namespace AssignmentADV02
             //int[] arr2 = { 2, 2, 3, 5 };
 
             //List<int> result = new List<int>();
-            //bool[] used = new bool[arr2.Length]; 
+            //bool[] used = new bool[arr2.Length];
 
             //for (int i = 0; i < arr1.Length; i++)
             //{
@@ -339,11 +339,13 @@ namespace AssignmentADV02
             //        if (!used[j] && arr1[i] == arr2[j])
             //        {
             //            result.Add(arr1[i]);
-            //            used[j] = true; 
+            //            used[j] = true;
             //            break;
             //        }
             //    }
             //}
+
+            //Console.WriteLine("Intersection: " + string.Join(", ", result));
 
             #endregion
 
@@ -352,7 +354,29 @@ namespace AssignmentADV02
             // 10. Given an ArrayList of integers and a target sum, find if there is a contiguous
             // sub list that sums up to the target.
 
+            //ArrayList numbers = new ArrayList() { 1, 2, 3, 7, 5 };
+            //int target = 12;
 
+            //bool found = false;
+
+            //for (int start = 0; start < numbers.Count; start++)
+            //{
+            //    int sum = 0;
+            //    for (int end = start; end < numbers.Count; end++)
+            //    {
+            //        sum += (int)numbers[end];
+            //        if (sum == target)
+            //        {
+            //            Console.WriteLine($"Sublist found from index {start} to {end}");
+            //            found = true;
+            //            break;
+            //        }
+            //    }
+            //    if (found) break;
+            //}
+
+            //if (!found)
+            //    Console.WriteLine("No sublist found with the target sum.");
 
             #endregion
 
@@ -360,6 +384,41 @@ namespace AssignmentADV02
 
             // 11. Given a queue reverse first K elements of a queue, keeping the remaining elements in the same order.
 
+        //    Queue<int> queue = new Queue<int>();
+        //    queue.Enqueue(10);
+        //    queue.Enqueue(20);
+        //    queue.Enqueue(30);
+        //    queue.Enqueue(40);
+        //    queue.Enqueue(50);
+
+        //    int K = 3;
+
+        //    Console.WriteLine("Original Queue: " + string.Join(", ", queue));
+
+        //    ReverseFirstK(queue, K);
+
+        //    Console.WriteLine("Modified Queue: " + string.Join(", ", queue));
+        //}
+
+        //static void ReverseFirstK(Queue<int> queue, int K)
+        //{
+        //    if (queue == null || K <= 0 || K > queue.Count)
+        //    {
+        //        Console.WriteLine("Invalid value of K.");
+        //        return;
+        //    }
+
+        //    Stack<int> stack = new Stack<int>();
+
+        //    for (int i = 0; i < K; i++)
+        //        stack.Push(queue.Dequeue());
+
+        //    while (stack.Count > 0)
+        //        queue.Enqueue(stack.Pop());
+
+        //    int remaining = queue.Count - K;
+        //    for (int i = 0; i < remaining; i++)
+        //        queue.Enqueue(queue.Dequeue());
 
             #endregion
 
