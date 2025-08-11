@@ -38,6 +38,28 @@
                     return false;
             }
             return true;
+        }
+        #endregion
+
+        #region Q03
+        public static void ReverseQueue<T>(Queue<T> queue)
+        {
+            if (queue == null)
+            {
+                Console.WriteLine("Queue cannot be null.");
+            }
+
+            Stack<T> stack = new Stack<T>();
+
+            while (queue.Count > 0)
+            {
+                stack.Push(queue.Dequeue());
+            }
+
+            while (stack.Count > 0)
+            {
+                queue.Enqueue(stack.Pop());
+            }
         } 
         #endregion
 
@@ -81,6 +103,35 @@
             //else
             //    Console.WriteLine("No");
             #endregion
+
+            #region Q03
+
+            // 3. Given a Queue, implement a function to reverse the elements of a queue using a stack.
+
+            Queue<int> myQueue = new Queue<int>();
+            myQueue.Enqueue(10);
+            myQueue.Enqueue(20);
+            myQueue.Enqueue(30);
+            myQueue.Enqueue(40);
+
+            Console.WriteLine("Original Queue:");
+            foreach (int item in myQueue)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+            ReverseQueue(myQueue);
+
+            Console.WriteLine("Reversed Queue:");
+            foreach (int item in myQueue)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine(); 
+            #endregion
+
+
 
         }
     }
