@@ -60,6 +60,16 @@ namespace DemoADV02
             Console.WriteLine("null");
         }
 
+        public static void PrintStack(Stack<int> stack)
+        {
+            Console.WriteLine();
+            foreach (int item in stack)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             #region What is Collections ?
@@ -229,9 +239,26 @@ namespace DemoADV02
             //linkedList.AddFirst(1);
             //linkedList.AddFirst(2); 
             #endregion
+            #region Generic Lists : Stack
 
+            // Generic Lists : Stack
 
+            //Stack<int> stack = new Stack<int>();
 
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //stack.Push(4);
+            //stack.Push(5);
+
+            ////int top = stack.Peek();
+            ////Console.WriteLine(top);
+
+            //int top = stack.Pop();
+            //Console.WriteLine(top);
+
+            //PrintStack(stack); 
+            #endregion
 
 
 
