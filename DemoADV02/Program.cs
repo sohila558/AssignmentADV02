@@ -70,6 +70,16 @@ namespace DemoADV02
             Console.WriteLine();
         }
 
+        public static void PrintQueue(Queue<int> queue)
+        {
+            Console.WriteLine();
+            foreach (int item in queue)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             #region What is Collections ?
@@ -239,6 +249,7 @@ namespace DemoADV02
             //linkedList.AddFirst(1);
             //linkedList.AddFirst(2); 
             #endregion
+
             #region Generic Lists : Stack
 
             // Generic Lists : Stack
@@ -259,6 +270,24 @@ namespace DemoADV02
 
             //PrintStack(stack); 
             #endregion
+
+            #region Generic Lists : Queue
+            // Generic Lists : Queue
+
+            //Queue<int> queue = new Queue<int>();
+
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Enqueue(4);
+
+            //queue.Dequeue();
+
+            //queue.Peek();
+
+            //PrintQueue(queue); 
+            #endregion
+
 
 
 
