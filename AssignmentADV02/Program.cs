@@ -294,7 +294,7 @@ namespace AssignmentADV02
 
             //Stack<int> stack = new Stack<int>();
 
-            
+
             //stack.Push(10);
             //stack.Push(20);
             //stack.Push(30);
@@ -326,6 +326,24 @@ namespace AssignmentADV02
             // 9. Given two arrays, find their intersection. Each element in the result should appear
             // as many times as it shows in both arrays.
 
+            //int[] arr1 = { 1, 2, 2, 3, 4 };
+            //int[] arr2 = { 2, 2, 3, 5 };
+
+            //List<int> result = new List<int>();
+            //bool[] used = new bool[arr2.Length]; 
+
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    for (int j = 0; j < arr2.Length; j++)
+            //    {
+            //        if (!used[j] && arr1[i] == arr2[j])
+            //        {
+            //            result.Add(arr1[i]);
+            //            used[j] = true; 
+            //            break;
+            //        }
+            //    }
+            //}
 
             #endregion
 
